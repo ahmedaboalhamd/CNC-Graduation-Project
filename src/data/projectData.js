@@ -156,7 +156,7 @@ export const teamMembers = [
     id:10,
     name:"Mazen Hanin Waleed Saad",
     studentId:"2420950",
-    image:"/team.images/Mazen Hanin Waleed Saad.jpg",
+    image: import.meta.env.BASE_URL + "team.images/Mazen.jpg",
     role:"Member of PCB-Design"
   }
 ];
