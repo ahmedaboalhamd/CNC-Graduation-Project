@@ -36,7 +36,7 @@ const About = () => {
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-white/5">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-cyan-500/20 mix-blend-overlay z-10"></div>
               <img 
-                src="/cnc_machine.png" 
+                src={import.meta.env.BASE_URL + "cnc_machine.png"}
                 alt="CNC Machine Action" 
                 className="w-full object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-700"
               />
