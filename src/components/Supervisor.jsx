@@ -9,7 +9,7 @@ const leaders = [
     role: "University Dean",
     department: "Faculty of Engineering",
     quote: "Empowering our students to push the boundaries of modern engineering and applied sciences.",
-    image: "/team.images/University Dean.png",
+    image: import.meta.env.BASE_URL + "team.images/University Dean.png",
     icon: <Briefcase className="w-6 h-6" />,
     color: "from-blue-500 to-indigo-500"
   },
@@ -19,7 +19,7 @@ const leaders = [
     role: "Head of Department",
     department: "Mechatronics Dept.",
     quote: "This CNC project is a testament to the department's vision for practical, industry-ready education.",
-    image: "/team.images/Osama_el_naahas.png",
+    image: import.meta.env.BASE_URL + "team.images/Osama_el_naahas.png",
     icon: <Award className="w-6 h-6" />,
     color: "from-amber-500 to-orange-500"
   },
@@ -49,7 +49,7 @@ const leaders = [
     role: "Team Leader",
     department: "Graduation Class of 2026",
     quote: "Leading a brilliant team of 30 engineers to turn our graduation dream into a fully functional reality.",
-    image: "/team.images/Ahmed_team_leader.png",
+    image: import.meta.env.BASE_URL + "team.images/Ahmed_team_leader.png",
     icon: <Users className="w-6 h-6" />,
     color: "from-purple-500 to-pink-500"
   }

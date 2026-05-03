@@ -18,7 +18,7 @@ export const componentsData = [
     function:
       "Processes the G-code and directly controls the CNC system based on the robust GRBL 1.1 firmware.",
     icon: Cpu,
-    image: "/grbl1.png",
+    image: import.meta.env.BASE_URL + "grbl1.png",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const componentsData = [
     function:
       "Streams live video feed of the CNC machining process to the web dashboard for remote monitoring.",
     icon: Camera,
-    image: "/esp32cam.png",
+    image: import.meta.env.BASE_URL + "esp32cam.png",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const componentsData = [
       "Three high precision motors that drive the X, Y, and Z axes of the CNC machine.",
     function: "Provides accurate linear movement along X, Y, and Z axes.",
     icon: Cog,
-    image: "/nema17.png",
+    image: import.meta.env.BASE_URL + "nema17.png",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const componentsData = [
     function:
       "Controls the voltage and microstepping for the three stepper motors.",
     icon: Zap,
-    image: "/drv8825.png",
+    image: import.meta.env.BASE_URL + "drv8825.png",
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ export const componentsData = [
       "Converts AC power to stable DC power for the machine components.",
     function: "Provides required power to motors and control electronics.",
     icon: Power,
-    image: "/powersupply.png",
+    image: import.meta.env.BASE_URL + "powersupply.png",
   },
   {
     id: 6,
@@ -92,35 +92,35 @@ export const teamMembers = [
     id: 1,
     name: "Ahmed Mahmoud Ali Al-Shalqami Al-Khatib", // مثال:
     studentId: "2420227", // مثال: 20201234
-    image: "/team.images/Ahmed_team_leader.png", // مسار الصورة، يفضل وضع الصور في مجلد public/team
+    image: import.meta.env.BASE_URL + "team.images/Ahmed_team_leader.png", // مسار الصورة، يفضل وضع الصور في مجلد public/team
     role: "Project Leader", // الدور، مثال: Hardware Engineer, Software Developer
   },
   {
     id: 2,
     name: "Ibrahem Mohamed Moha",
     studentId: "2420195",
-    image: "/team.images/Ibrahem Mohamed.png",
+    image: import.meta.env.BASE_URL + "team.images/Ibrahem Mohamed.png",
     role: "Member of Hardware",
   },
   {
     id: 3,
     name: "Ahmed Ashour Salah",
     studentId: "2420217",
-    image: "/team.images/Ahmed Ashour Salah.jpg",
+    image: import.meta.env.BASE_URL + "team.images/Ahmed Ashour Salah.jpg",
     role: "Member of Hardware",
   },
   {
     id: 4,
     name: "Ahmed Mohamed Ali ",
     studentId: "2420224",
-    image: "/team.images/Ahmed Mohamed.jpeg",
+    image: import.meta.env.BASE_URL + "team.images/Ahmed Mohamed.jpeg",
     role: "Member of WEB-Application",
   },
   {
     id: 5,
     name: "Ahmed Eid Abdelsalam",
     studentId: "2420220",
-    image: "/team.images/Ahmed Eid Abdelsalam.jpg",
+    image: import.meta.env.BASE_URL + "team.images/Ahmed Eid Abdelsalam.jpg",
     role: "Member of WEB-Application",
   },
 
@@ -128,28 +128,28 @@ export const teamMembers = [
     id: 6,
     name: "Mahmoud Mohamed Mahmoud",
     studentId: "2421153",
-    image: "/team.images/Mahmoud Mohamed Mahmoud.jpeg",
+    image: import.meta.env.BASE_URL + "team.images/Mahmoud Mohamed Mahmoud.jpeg",
     role: "Member of WEB-Application",
   },
   {
     id: 7,
     name: "Abdelghani Ismail AbdelFattah",
     studentId: "2420747",
-    image: "/team.images/Abdelghani Ismail AbdelFattah.jpg",
+    image: import.meta.env.BASE_URL + "team.images/Abdelghani Ismail AbdelFattah.jpg",
     role: "Member of Hardware",
   },
   {
     id:8,
     name: "Mostafa Haitham Ezzat Mostafa",
     studentId: "2421211",
-    image: "/team.images/Mostafa Haitham Ezzat Mostafa.jpg",
+    image: import.meta.env.BASE_URL + "team.images/Mostafa Haitham Ezzat Mostafa.jpg",
     role: "Member of WEB-Application",
   },
   {
     id: 9,
     name: "Ahmed Mohamed Lotfi",
     studentId: "2420225",
-    image: "/team.images/Ahmed Mohamed Lotfi.png",
+    image: import.meta.env.BASE_URL + "team.images/Ahmed Mohamed Lotfi.png",
     role: "Member of PCB-Design"
   },
   {
