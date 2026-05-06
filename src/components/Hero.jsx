@@ -36,7 +36,7 @@ const Hero = () => {
               </span>
             </motion.div>
 
-            <h1 className="text-6xl md:text-8xl font-black text-slate-900 dark:text-white mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-slate-900 dark:text-white mb-6 leading-[1.1] tracking-tight">
               Precision <br className="hidden md:block" />
               <span className="relative inline-block">
                 <span className="absolute -inset-2 bg-gradient-to-r from-primary-500 to-cyan-400 blur-2xl opacity-20 dark:opacity-40 rounded-full"></span>

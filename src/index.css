@@ -6,6 +6,9 @@
   html {
     scroll-behavior: smooth;
   }
+  html, body {
+    @apply overflow-x-hidden w-full;
+  }
   body {
     @apply bg-slate-50 dark:bg-dark-900 text-slate-800 dark:text-slate-200 antialiased transition-colors duration-300;
   }
