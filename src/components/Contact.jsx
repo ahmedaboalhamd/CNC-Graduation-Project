@@ -71,11 +71,11 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-semibold tracking-wide text-slate-700 dark:text-slate-300 uppercase">Your Name</label>
-                  <input type="text" className="w-full bg-white/50 dark:bg-dark-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all duration-300" placeholder="John Doe" />
+                  <input type="text" className="w-full bg-white/50 dark:bg-dark-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all duration-300" placeholder="Ahmed Mohamed" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-semibold tracking-wide text-slate-700 dark:text-slate-300 uppercase">Email Address</label>
-                  <input type="email" className="w-full bg-white/50 dark:bg-dark-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all duration-300" placeholder="john@example.com" />
+                  <input type="email" className="w-full bg-white/50 dark:bg-dark-900/50 backdrop-blur-md border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition-all duration-300" placeholder="Ahmed@example.com" />
                 </div>
               </div>
               
