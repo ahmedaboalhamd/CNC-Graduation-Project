@@ -28,7 +28,7 @@ export const componentsData = [
     function:
       "Streams live video feed of the CNC machining process to the web dashboard for remote monitoring.",
     icon: Camera,
-    image: import.meta.env.BASE_URL + "esp32cam.png",
+    image: import.meta.env.BASE_URL + "esp32cam_new.jpeg",
   },
   {
     id: 3,

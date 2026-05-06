@@ -38,7 +38,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 relative z-10">University Location</h3>
-              <p className="text-slate-600 dark:text-slate-400 font-light leading-relaxed relative z-10">Faculty of Engineering<br/>Mechatronics Department<br/>Building B, 3rd Floor</p>
+              <p className="text-slate-600 dark:text-slate-400 font-light leading-relaxed relative z-10">Borg El Arab Technological University<br/>Information Technology Department</p>
             </div>
 
             <div className="glass-card p-8 rounded-3xl group hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">

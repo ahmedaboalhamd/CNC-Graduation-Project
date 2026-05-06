@@ -38,7 +38,7 @@ const ComponentsSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative h-56 overflow-hidden">
-                  <div className="absolute inset-0 bg-slate-900/10 dark:bg-dark-900/40 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500 z-10" />
+                  <div className="absolute inset-0 bg-slate-900/10 dark:bg-dark-900/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
                   <img 
                     src={item.image} 
                     alt={item.name} 

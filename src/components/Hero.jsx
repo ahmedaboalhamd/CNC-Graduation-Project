@@ -8,12 +8,12 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 transition-colors duration-300">
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0 bg-slate-50 dark:bg-dark-900 transition-colors duration-500">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1565439390118-b20468962ff3?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-10 dark:opacity-20 mix-blend-luminosity"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1565439390118-b20468962ff3?auto=format&fit=crop&q=60&w=1200')] bg-cover bg-center opacity-10 dark:opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-50/80 to-slate-50 dark:from-transparent dark:via-dark-900/80 dark:to-dark-900 z-10" />
         
         {/* Animated Orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl animate-pulse mix-blend-screen z-10"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-cyan-500/10 rounded-full blur-3xl animate-pulse mix-blend-screen z-10" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl z-10"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-cyan-500/5 rounded-full blur-3xl z-10"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-20">
