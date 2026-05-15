@@ -92,7 +92,7 @@ export const teamMembers = [
     id: 1,
     name: "Ahmed Mahmoud Ali Al-Shalqami Al-Khatib", // مثال:
     studentId: "2420227", // مثال: 20201234
-    image: import.meta.env.BASE_URL + "team.images/Ahmed_team_leader.png", // مسار الصورة، يفضل وضع الصور في مجلد public/team
+    image: import.meta.env.BASE_URL + "team.images/Ahmed_team_leader.jpeg", // مسار الصورة، يفضل وضع الصور في مجلد public/team
     role: "Project Leader", // الدور، مثال: Hardware Engineer, Software Developer
   },
   {
@@ -128,21 +128,26 @@ export const teamMembers = [
     id: 6,
     name: "Mahmoud Mohamed Mahmoud",
     studentId: "2421153",
-    image: import.meta.env.BASE_URL + "team.images/Mahmoud Mohamed Mahmoud.jpeg",
+    image:
+      import.meta.env.BASE_URL + "team.images/Mahmoud Mohamed Mahmoud.jpeg",
     role: "Member of WEB-Application",
   },
   {
     id: 7,
     name: "Abdelghani Ismail AbdelFattah",
     studentId: "2420747",
-    image: import.meta.env.BASE_URL + "team.images/Abdelghani Ismail AbdelFattah.jpg",
+    image:
+      import.meta.env.BASE_URL +
+      "team.images/Abdelghani Ismail AbdelFattah.jpg",
     role: "Member of Hardware",
   },
   {
-    id:8,
+    id: 8,
     name: "Mostafa Haitham Ezzat Mostafa",
     studentId: "2421211",
-    image: import.meta.env.BASE_URL + "team.images/Mostafa Haitham Ezzat Mostafa.jpg",
+    image:
+      import.meta.env.BASE_URL +
+      "team.images/Mostafa Haitham Ezzat Mostafa.jpg",
     role: "Member of WEB-Application",
   },
   {
@@ -150,15 +155,54 @@ export const teamMembers = [
     name: "Ahmed Mohamed Lotfi",
     studentId: "2420225",
     image: import.meta.env.BASE_URL + "team.images/Ahmed Mohamed Lotfi.png",
-    role: "Member of PCB-Design"
+    role: "Member of PCB-Design",
   },
   {
-    id:10,
-    name:"Mazen Hanin Waleed Saad",
-    studentId:"2420950",
+    id: 10,
+    name: "Mazen Hanin Waleed Saad",
+    studentId: "2420950",
     image: import.meta.env.BASE_URL + "team.images/Mazen.jpg",
-    role:"Member of PCB-Design"
-  }
+    role: "Member of PCB-Design",
+  },
+  {
+    id: 11,
+    name: "Basmala Nabil Ali El-Saeed Khneifer",
+    studentId: "2420285",
+    image:
+      import.meta.env.BASE_URL +
+      "team.images/Basmala Nabil Ali El-Saeed Khneifer.jpg",
+    role: "",
+  },
+  {
+    id: 12,
+    name: "Alaa Ashraf Sayed Ahmed Zuwein",
+    studentId: "2420261",
+    image: import.meta.env.BASE_URL + "team.images/female_avatar.png",
+    role: "",
+  },
+  {
+    id: 13,
+    name: "Amira Hassan Abdelhamid Hassan El-Sahly",
+    studentId: "2420157",
+    image: import.meta.env.BASE_URL + "team.images/female_avatar.png",
+    role: "",
+  },
+  {
+    id: 14,
+    name: "Ahmed Hafez Abdelaziz Abdel Latif Hafez",
+    studentId: "2420028",
+    image:
+      import.meta.env.BASE_URL +
+      "team.images/Ahmed Hafez Abdelaziz Abdel Latif Hafez.jpeg",
+    role: "",
+  },
+  {
+    id: 15,
+    name: "",
+    studentId: "",
+    image: "",
+    role: "",
+  },
 ];
 
 export const galleryImages = [
