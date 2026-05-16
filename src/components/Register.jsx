@@ -160,34 +160,6 @@ const Register = () => {
             )}
           </div>
 
-          {/* Role Selection */}
-          <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Account Type</label>
-            <div className="flex gap-4">
-              <label className="flex items-center">
-                <input
-                  type="radio"
-                  name="role"
-                  value="user"
-                  checked={formData.role === 'user'}
-                  onChange={handleChange}
-                  className="w-4 h-4 text-primary-500 focus:ring-primary-500 border-slate-300 dark:border-white/10 dark:bg-dark-900 focus:ring-2"
-                />
-                <span className="ml-2 text-sm font-medium text-slate-700 dark:text-slate-300">User</span>
-              </label>
-              <label className="flex items-center">
-                <input
-                  type="radio"
-                  name="role"
-                  value="admin"
-                  checked={formData.role === 'admin'}
-                  onChange={handleChange}
-                  className="w-4 h-4 text-primary-500 focus:ring-primary-500 border-slate-300 dark:border-white/10 dark:bg-dark-900 focus:ring-2"
-                />
-                <span className="ml-2 text-sm font-medium text-slate-700 dark:text-slate-300">Admin</span>
-              </label>
-            </div>
-          </div>
 
           <button
             type="submit" disabled={loading}

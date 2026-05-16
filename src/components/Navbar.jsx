@@ -99,7 +99,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         <p className="text-xs text-slate-500 dark:text-slate-400">Signed in as</p>
                         <p className="text-sm font-semibold text-slate-900 dark:text-white truncate">{currentUser.email}</p>
                       </div>
-                      <Link to="/user-dashboard" onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-dark-700 transition-colors">
+                      <Link to={currentUser?.role === 'admin' ? "/admin-dashboard" : "/user-dashboard"} onClick={() => setShowUserMenu(false)} className="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-dark-700 transition-colors">
                         <UserIcon className="w-4 h-4" /> My Dashboard
                       </Link>
                       <button onClick={handleLogout} className="w-full flex items-center gap-3 px-4 py-3 text-sm text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 transition-colors">
@@ -152,7 +152,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <div className="flex items-center gap-2 mt-2 pt-2 border-t border-slate-100 dark:border-white/5">
             {currentUser ? (
               <>
-                <Link to="/user-dashboard" onClick={() => setIsMobileMenuOpen(false)} className="flex-1 text-center px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 dark:bg-dark-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-dark-700 transition-colors">
+                <Link to={currentUser?.role === 'admin' ? "/admin-dashboard" : "/user-dashboard"} onClick={() => setIsMobileMenuOpen(false)} className="flex-1 text-center px-4 py-2 rounded-xl text-sm font-bold bg-slate-100 dark:bg-dark-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-dark-700 transition-colors">
                   Dashboard
                 </Link>
                 <button onClick={handleLogout} className="flex-1 text-center px-4 py-2 rounded-xl text-sm font-bold bg-red-500 hover:bg-red-600 text-white shadow-sm transition-colors">

@@ -25,21 +25,21 @@ const leaders = [
   },
   {
     id: 3,
-    name: "Dr. Alexander Wright",
+    name: "Dr. Eman Shawky",
     role: "Project Supervisor",
     department: "Robotics & Automation",
     quote: "Guiding 30 students to build a full-scale CNC machine from scratch has been an extraordinary journey.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+    image: import.meta.env.BASE_URL + "team.images/dr Eman Shawky.png",
     icon: <GraduationCap className="w-6 h-6" />,
     color: "from-primary-500 to-cyan-500"
   },
   {
     id: 4,
-    name: "Eng. Omar Youssef",
+    name: "Eng. Hazem",
     role: "Teaching Assistant",
     department: "Information Technology Dept.",
     quote: "Supporting the team through complex technical challenges and witnessing their growth was deeply rewarding.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+    image: import.meta.env.BASE_URL + "team.images/image.png",
     icon: <UserCheck className="w-6 h-6" />,
     color: "from-emerald-500 to-teal-500"
   },
@@ -49,7 +49,7 @@ const leaders = [
     role: "Team Leader",
     department: "Graduation Class of 2026",
     quote: "Leading a brilliant team of 30 engineers to turn our graduation dream into a fully functional reality.",
-    image: import.meta.env.BASE_URL + "team.images/Ahmed_team_leader.png",
+    image: import.meta.env.BASE_URL + "team.images/Ahmed_team_leader.jpeg",
     icon: <Users className="w-6 h-6" />,
     color: "from-purple-500 to-pink-500"
   }

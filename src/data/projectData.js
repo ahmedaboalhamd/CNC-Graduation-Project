@@ -197,19 +197,48 @@ export const teamMembers = [
     role: "",
   },
   {
-    id: 15,
-    name: "",
-    studentId: "",
-    image: "",
+    id: 16,
+    name: "Islam Ali Abdel Fattah Abdel Latif",
+    studentId: "2420118",
+    image: "public/team.images/Islam Ali Abdel Fattah Abdel Latif.jpeg",
     role: "",
   },
+  {
+    id: 17,
+    name: "Mahmoud Ahmed Fathy",
+    studentId: "2421120",
+    image: "public/team.images/Mahmoud Ahmed Fathy.jpg",
+    role: "",
+  },
+  {
+    id: 18,
+    name: "Omnia El-Khodary Abdel Aziz Ahmed",
+    studentId: "2420151",
+    image: "team.images/female_avatar.png",
+    role: "",
+  },
+  {
+    id: 19,
+    name: "Rawan Ismail Abdel Monem Salama",
+    studentId: "2420461",
+    image: "team.images/female_avatar.png",
+    role: "",
+  },
+  {
+    id: 20,
+    name: "Shahd Abdel Aziz Youssef Abdel Aziz",
+    studentId: "2420604",
+    image: "team.images/female_avatar.png",
+    role: "",
+  },
+  
 ];
 
 export const galleryImages = [
-  "https://images.unsplash.com/photo-1565439390118-b20468962ff3?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1537462715879-360eeb61a8ad?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80&w=800",
+  { type: 'video', url: import.meta.env.BASE_URL + "vedios/WhatsApp Video 2026-05-12 at 12.48.09 AM.mp4" },
+  { type: 'image', url: import.meta.env.BASE_URL + "team.images/image copy2.png" },
+  { type: 'image', url: "https://images.unsplash.com/photo-1537462715879-360eeb61a8ad?auto=format&fit=crop&q=80&w=800" },
+  { type: 'image', url: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800" },
+  { type: 'image', url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" },
+  { type: 'image', url: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80&w=800" },
 ];
