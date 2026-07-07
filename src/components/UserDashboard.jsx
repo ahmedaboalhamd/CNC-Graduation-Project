@@ -9,10 +9,26 @@ const UserDashboard = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [uploadSuccess, setUploadSuccess] = useState(false);
   const { currentUser } = useAuth();
+  const allowedExtensions = ['.gcode', '.nc', '.dxf', '.svg', '.jpg', '.jpeg'];
+
+  const isValidFileType = (selectedFile) => {
+    if (!selectedFile) return false;
+
+    const fileName = selectedFile.name.toLowerCase();
+    return allowedExtensions.some((ext) => fileName.endsWith(ext));
+  };
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files[0]) {
-      setFile(e.target.files[0]);
+      const selectedFile = e.target.files[0];
+
+      if (!isValidFileType(selectedFile)) {
+        alert('Only .gcode, .nc, .dxf, .svg, and .jpg files are allowed.');
+        e.target.value = '';
+        return;
+      }
+
+      setFile(selectedFile);
       setUploadSuccess(false);
     }
   };
@@ -22,7 +38,14 @@ const UserDashboard = () => {
   const handleDrop = (e) => {
     e.preventDefault();
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      setFile(e.dataTransfer.files[0]);
+      const selectedFile = e.dataTransfer.files[0];
+
+      if (!isValidFileType(selectedFile)) {
+        alert('Only .gcode, .nc, .dxf, .svg, and .jpg files are allowed.');
+        return;
+      }
+
+      setFile(selectedFile);
       setUploadSuccess(false);
     }
   };
@@ -85,10 +108,10 @@ const UserDashboard = () => {
                     <FileUp className="w-8 h-8" />
                   </div>
                   <h3 className="text-lg font-medium text-slate-900 dark:text-white mb-2">Drag & Drop your file here</h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Supports .gcode, .nc, .dxf, .svg</p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Supports .gcode, .nc, .dxf, .svg, .jpg</p>
                   <label className="cursor-pointer inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-xl shadow-sm text-sm font-bold text-white bg-primary-500 hover:bg-primary-600 transition-colors">
                     <span>Browse Files</span>
-                    <input type="file" className="hidden" onChange={handleFileChange} />
+                    <input type="file" accept=".gcode,.nc,.dxf,.svg,.jpg,.jpeg,image/jpeg" className="hidden" onChange={handleFileChange} />
                   </label>
                 </>
               ) : (
